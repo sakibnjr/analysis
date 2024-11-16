@@ -1,0 +1,110 @@
+[
+  {
+    "Author Names": "Mohan et al.",
+    "Year": 2024,
+    "Dataset": "Two datasets: 15,153 images (Dataset 1), 4,575 images (Dataset 2). Balanced subsets created.",
+    "All Models Used": "VGG16, Inception ResNet, Custom CNN",
+    "Methodology": "Transfer learning applied to VGG16 and Inception ResNet. Custom CNN trained using 80:10:10 cross-validation. Grad-CAM used for visualization.",
+    "Best Model Name": "Custom CNN",
+    "Best Model Accuracy": "97%"
+  },
+  {
+    "Author Names": "Alshmrani et al.",
+    "Year": 2023,
+    "Dataset": "COVID-19 (3,615), Lung Opacity (6,012), Pneumonia (5,870), Lung Cancer (20,000), Tuberculosis (1,400), Normal (10,192).",
+    "All Models Used": "VGG19 + Custom CNN",
+    "Methodology": "Pretrained VGG19 followed by CNN for feature extraction. Full dataset normalized and resized. Random splitting for training.",
+    "Best Model Name": "VGG19 + Custom CNN",
+    "Best Model Accuracy": "96.48%"
+  },
+  {
+    "Author Names": "Hao et al.",
+    "Year": 2021,
+    "Dataset": "NIH Dataset (Normal, Pneumonia, Pneumothorax) + Cheonan Soonchunhyang University dataset (Tuberculosis).",
+    "All Models Used": "EfficientNet B7",
+    "Methodology": "Preprocessing with Center Crop, fine-tuning of ImageNet weights, and Multi GAP structure. NIH dataset benchmarked; four-class prediction used for hospital dataset.",
+    "Best Model Name": "EfficientNet B7",
+    "Best Model Accuracy": "96.10%"
+  },
+  {
+    "Author Names": "Metwally (2022)",
+    "Year": 2022,
+    "Dataset": "COVID-19, Pneumonia, Tuberculosis datasets.",
+    "All Models Used": "ResNet50, InceptionV3, Custom Model (EfficientNetB0)",
+    "Methodology": "Models evaluated on preprocessed and augmented data using cross-validation. Custom model optimized for low-cost computation and higher precision metrics.",
+    "Best Model Name": "EfficientNetB0",
+    "Best Model Accuracy": "88.00%"
+  },
+  {
+    "Author Names": "Shamrat et al.",
+    "Year": 2023,
+    "Dataset": "ChestX-ray14 dataset.",
+    "All Models Used": "InceptionV3, AlexNet, DenseNet121, MobileNetV2, VGG19",
+    "Methodology": "Fine-tuned MobileLungNetV2 on preprocessed images (CLAHE for contrast enhancement, Gaussian filter for denoising). Grad-CAM used for heatmaps.",
+    "Best Model Name": "MobileNetV2",
+    "Best Model Accuracy": "96.30%"
+  },
+  {
+    "Author Names": "Kim et al.",
+    "Year": 2022,
+    "Dataset": "NIH Dataset (Normal, Pneumonia, Pneumothorax) + Cheonan Soonchunhyang University Hospital dataset.",
+    "All Models Used": "EfficientNet v2-M",
+    "Methodology": "End-to-end transfer learning using raw CXR images directly in a one-step process. Classifying 3 classes on NIH and 4 on SCH dataset.",
+    "Best Model Name": "EfficientNet v2-M",
+    "Best Model Accuracy": "82.2% (validation)"
+  },
+  {
+    "Author Names": "Madiajagan M.",
+    "Year": 2024,
+    "Dataset": "5928 CXR images sourced from various open-access websites: COVID-19 (1626), Normal (1802), Pneumonia (1800), Tuberculosis (700)",
+    "All Models Used": "Customized VGG-19 architecture.",
+    "Methodology": "Resizing, Gaussian filter for noise removal, CLAHE for image enhancement, and data augmentation to increase dataset size.",
+    "Best Model Name": "Customized VGG-19.",
+    "Best Model Accuracy": "93.33%."
+  },
+  {
+    "Author Names": "Bhandari et al.",
+    "Year": 2023,
+    "Dataset": "Publicly available datasets with 7,132 chest X-ray images (COVID-19, Pneumonia, Tuberculosis).",
+    "All Models Used": "Convolution Features, Explainable AI Framework (Grad-CAM, SHAP, LIME).",
+    "Methodology": "Deep learning with XAI models for feature extraction and interpretability. Gradient-weighted Class Activation Mapping (Grad-CAM), LIME, and SHAP methods applied.",
+    "Best Model Name": "Custom Model + XAI",
+    "Best Model Accuracy": "94.31%"
+  },
+  {
+    "Author Names": "Al-Sheikh et al.",
+    "Year": 2023,
+    "Dataset": "Publicly available CT and X-Ray datasets.",
+    "All Models Used": "Customized CNN, AlexNet, VGG16",
+    "Methodology": "Proposed new image enhancement model based on k-symbol Lerch transcendent functions in pre-processing. Customized CNN and pre-trained AlexNet, VGG16 applied for classification.",
+    "Best Model Name": "Customized CNN",
+    "Best Model Accuracy": "93.50%"
+  },
+  {
+    "Author Names": "Tanzina Taher Ifty",
+    "Year": 2024,
+    "Dataset": null,
+    "All Models Used": "CNN, Hybrid Models, Ensembles, Transformers, Big Transfer, Xception (fine-tuned).",
+    "Methodology": "Hyperparameter tuning, stratified k-fold cross-validation (5-fold), transfer learning, explainable AI (XAI) for model interpretability and decision-making trust.",
+    "Best Model Name": "Xception (fine-tuned through 5-fold cross-validation).",
+    "Best Model Accuracy": "96.21%."
+  },
+  {
+    "Author Names": "Farhan et al.",
+    "Year": 2023,
+    "Dataset": "Chest X-ray datasets (various public datasets).",
+    "All Models Used": "2D CNN, AdaBoost, SVM, Random Forest, Backpropagation Neural Network, DNN",
+    "Methodology": "Hybrid deep learning framework using CNN for feature extraction. Applied machine learning classifiers such as SVM, Random Forest, and DNN for classification.",
+    "Best Model Name": "Hybrid DL Framework",
+    "Best Model Accuracy": "98.99%"
+  },
+  {
+    "Author Names": "Irtaza et al.",
+    "Year": 2024,
+    "Dataset": "NIH Chest X-ray dataset with 14 classes; synthetic dataset generated using GAN containing 1193 samples for five classes.",
+    "All Models Used": "MobileNet, DenseNet, VGG-16, EfficientNet, Xception, InceptionV3, Deep-CNN, R-CNN, GAN.",
+    "Methodology": "Experimentation with various models and optimization. Evaluation using recall, precision, F1-score, binary accuracy, and AUC.",
+    "Best Model Name": "MobileNetV1",
+    "Best Model Accuracy": "93.40%"
+  }
+]
